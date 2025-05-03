@@ -20,108 +20,36 @@
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&amp;display=swap&amp;display=swap">
   </noscript> 
   <link rel="stylesheet" href="https://r.mobirisesite.com/1444485/assets/css/mbr-additional.css?rnd=1746097557640" type="text/css"> 
-  <style>
-.navbar-fixed-top {
-  top: auto;
-}
-#mobirisePromo.container-banner {
-  height: 11rem;
-  opacity: 1;
-  -webkit-animation: 11s linear animationHeight;
-  -moz-animation: 11s linear animationHeight;
-    -o-animation: 11s linear animationHeight;
-       animation: 11s linear animationHeight;
-       transition: all  0.5s;
-}
-#mobirisePromo.container-banner.container-banner-closing {
-  pointer-events: none;
-  height: 0;
-  opacity: 0;
-  -webkit-animation: 0.5s linear animationClosing;
-  -moz-animation:  0.5s linear animationClosing;
-    -o-animation:  0.5s linear animationClosing;
-       animation:  0.5s linear animationClosing;
-}
-#mobirisePromo .banner {
-  min-height: 11rem;
-  position:fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: #fff;
-  padding: 10px;
-  opacity:1;
-  -webkit-animation: 11s linear animationBanner;
-  -moz-animation: 11s linear animationBanner;
-    -o-animation: 11s linear animationBanner;
-       animation: 11s linear animationBanner;
-  z-index: 1031;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#mobirisePromo .banner p {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  animation: none;
-  visibility: visible;
-}
-#mobirisePromo .buy-license {
-  text-decoration: underline;
-}
-#mobirisePromo .banner .btn {
-  margin: 0.3rem 0.5rem;
-  animation: none;
-  visibility: visible;
-}
-.navbar.opened {
-    z-index: 1032;
-}
-#mobirisePromo .mbr-section-abuse-report {
-  margin-top: 0.8rem;
-  font-size: 80%;
-}
-#mobirisePromo .mbr-section-abuse-report a {
-  color: #aaa;
-}
-@-webkit-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
-@-moz-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
-@-o-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
-   @keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
-@-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
-@-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
-@-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
-   @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
-
-@-webkit-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-@-moz-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-@-o-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-@keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-
-@media(max-width: 575px) {
-  #mobirisePromo.container-banner {
-    height: 14rem;
+  
+<style>
+  .mbr-masonry {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    position: static !important;
+    height: auto !important;
   }
-  #mobirisePromo .banner {
-    min-height: 14rem;
-  }
-  @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
-  @-moz-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
-  @-o-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
-    @keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
-  @-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
-  @-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
-  @-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
-    @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
 
-  @-webkit-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-  @-moz-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-  @-o-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-  @keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-}
-</style> 
+  .mbr-masonry .item-mb {
+    position: static !important;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 576px) {
+    .mbr-masonry .item-mb {
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .mbr-masonry .item-mb {
+      width: calc(33.333% - 20px);
+    }
+  }
+</style>
+ 
   <style type="text/css">
     #PPSmartCart .dummy-template-paypal,
     #buy-now-window .dummy-template-paypal {
@@ -407,7 +335,39 @@
         justify-content: space-between;
       }
     }</style>
- </head> 
+ 
+
+<style>
+  .mbr-masonry {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    position: static !important;
+    height: auto !important;
+  }
+
+  .mbr-masonry .item-mb {
+    position: static !important;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 576px) {
+    .mbr-masonry .item-mb {
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .mbr-masonry .item-mb {
+      width: calc(33.333% - 20px);
+    }
+  }
+</style>
+
+
+</head> 
  <body> 
   </div> 
   <section data-bs-version="5.1" class="menu menu2 cid-uJGP5kdXfA" once="menu" id="menu-5-uJGP5kdXfA"> 
@@ -512,7 +472,7 @@
     </div> 
    </div> 
   </section> 
-  <section data-bs-version="5.1" class="features22 cid-uJWqVuReuO" id="features022-11"> 
+  <section data-bs-version="5.1" class="features22 cid-uJWqVuReuO" id="features022-11" style="padding-bottom: 80px;"> 
    <div class="container"> 
     <div class="row mb-5 justify-content-center"> 
      <div class="col-12 content-head"> 
@@ -520,7 +480,7 @@
      </div> 
     </div> 
     <div class="row mbr-masonry" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 1688.65px;"> 
-     <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb" style="position: absolute; left: 0%; top: 0px;"> 
+     <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb" > 
       <div class="item-wrapper"> 
        <div class="card-box align-left"> 
         <div class="iconfont-wrapper"> 
@@ -534,7 +494,7 @@
        </div> 
       </div> 
      </div>
-     <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb" style="position: absolute; left: 0%; top: 303.842px;"> 
+     <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb" > 
       <div class="item-wrapper"> 
        <div class="card-box align-left"> 
         <div class="iconfont-wrapper"> 
@@ -548,7 +508,7 @@
        </div> 
       </div> 
      </div>
-     <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb" style="position: absolute; left: 0%; top: 580.803px;"> 
+     <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb" > 
       <div class="item-wrapper"> 
        <div class="card-box align-left"> 
         <div class="iconfont-wrapper"> 
@@ -562,7 +522,7 @@
        </div> 
       </div> 
      </div> 
-     <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb" style="position: absolute; left: 0%; top: 857.764px;"> 
+     <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb" > 
       <div class="item-wrapper"> 
        <div class="card-box align-left"> 
         <div class="iconfont-wrapper"> 
@@ -573,7 +533,7 @@
        </div> 
       </div> 
      </div> 
-     <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb" style="position: absolute; left: 0%; top: 1134.72px;"> 
+     <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb" > 
       <div class="item-wrapper"> 
        <div class="card-box align-left"> 
         <div class="iconfont-wrapper"> 
@@ -584,7 +544,7 @@
        </div> 
       </div> 
      </div> 
-     <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb" style="position: absolute; left: 0%; top: 1411.69px;"> 
+     <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb" > 
       <div class="item-wrapper"> 
        <div class="card-box align-left"> 
         <div class="iconfont-wrapper"> 
@@ -745,7 +705,36 @@
      <path d="M21 19H5.2l-3-15H0V2h3.8l.8 4H23l-1.2 9H6.4l.4 2H21v2zM6 13h14l.7-5H5l1 5zm2 7c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
     </svg><span id="smart-cart-qty" style="font-size: 16px; color: rgb(20, 20, 43); background-color: rgb(254, 219, 1);">0</span></i>
   </div>
-  <style>#giftcard-to-smartcart {font-size: 15px; color: #14142b; background-color: #fedb01}</style> 
+  
+<style>
+  .mbr-masonry {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    position: static !important;
+    height: auto !important;
+  }
+
+  .mbr-masonry .item-mb {
+    position: static !important;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 576px) {
+    .mbr-masonry .item-mb {
+      width: calc(50% - 20px);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .mbr-masonry .item-mb {
+      width: calc(33.333% - 20px);
+    }
+  }
+</style>
+ 
  </body>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> </body>
 </html>
